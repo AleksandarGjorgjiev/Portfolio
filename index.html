@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <title>Your Portfolio</title>
+    <style>
+        .image-with-text {
+            position: relative;
+            width: 300px; 
+            height: 300px; 
+        }
+        .image-with-text img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        .image-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .expandable-content {
+            display: none;
+            margin-top: 10px;
+            color: white; /* Make the expanded text white */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aleksandar Gjorgjiev  Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div id="home-text">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am Aleksandar Gjorgjiev, a Mobile Phones Software Expert and Full Stack Java Developer</p>
+    </div>
+    <img src="assets/images/Aleksandar.png" alt="Your Picture">
+</section>
+
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skills-text">
+            <h2 class="programming-languages" onclick="toggleContent(event, 'programming-languages-content')">Programming Languages</h2>
+            <div id="programming-languages-content" class="expandable-content">
+                <ul>
+                    <li><a href="#java" class="bold-font" onclick="toggleContent(event, 'java-content')">Java</a></li>
+                </ul>
+                <div id="java-content" class="expandable-content">
+                    <p>Java is a popular programming language, created in 1995. It is owned by Oracle, and more than 3 billion devices run Java. It is used for:</p>
+                    <ul>
+                        <li>Mobile applications (especially Android apps)</li>
+                        <li>Desktop applications</li>
+                        <li>Web applications</li>
+                        <li>Web servers and application servers</li>
+                        <li>Games</li>
+                        <li>Database connection</li>
+                        <li>And much, much more!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 class="web-technologies" onclick="toggleContent(event, 'web-technologies-content')">Web Technologies</h2>
+            <div id="web-technologies-content" class="expandable-content">
+                <ul>
+                    <li><a href="#webtech" class="bold-font" onclick="toggleContent(event, 'webtech-content')">HTML/CSS/JavaScript</a></li>
+                    <li><a href="#sql" class="bold-font" onclick="toggleContent(event, 'sql-content')">SQL & MySQL</a></li>
+                </ul>
+                <div id="webtech-content" class="expandable-content">
+                    <p>HTML, CSS, and JavaScript are the foundational technologies for building web pages. SQL is used for managing databases, and MySQL is a popular database management system.</p>
+                </div>
+                <div id="sql-content" class="expandable-content">
+                    <p>SQL is a language used for managing and manipulating databases. MySQL is a widely used relational database management system.</p>
+                </div>
+            </div>
+            
+            <h2 class="frameworks" onclick="toggleContent(event, 'frameworks-content')">Frameworks</h2>
+            <div id="frameworks-content" class="expandable-content">
+                <ul>
+                    <li><a href="#springboot" class="bold-font" onclick="toggleContent(event, 'springboot-content')">SpringBoot & Thymeleaf</a></li>
+                    <li><a href="#angular" class="bold-font" onclick="toggleContent(event, 'angular-content')">Angular</a></li>
+                </ul>
+                <div id="springboot-content" class="expandable-content">
+                    <p>SpringBoot & Thymeleaf are powerful frameworks for building Java applications. Thymeleaf is a modern server-side Java template engine for web and standalone environments.</p>
+                </div>
+                <div id="angular-content" class="expandable-content">
+                    <p>Angular is a web application framework for building single-page applications. It provides a complete solution for building dynamic and interactive web applications.</p>
+                </div>
+            </div>
+            
+            <h2 class="other" onclick="toggleContent(event, 'other-content')">Other</h2>
+            <div id="other-content" class="expandable-content">
+                <ul>
+                    <li><a href="#data-structures" class="bold-font" onclick="toggleContent(event, 'data-structures-content')">Data Structures & Algorithms</a></li>
+                    <li><a href="#cloud-tech" class="bold-font" onclick="toggleContent(event, 'cloud-tech-content')">Cloud Technologies</a></li>
+                </ul>
+                <div id="data-structures-content" class="expandable-content">
+                    <p>Data Structures & Algorithms are fundamental concepts for efficient programming. They provide the foundation for designing efficient and scalable software applications.</p>
+                </div>
+                <div id="cloud-tech-content" class="expandable-content">
+                    <p>Cloud Technologies encompass a broad range of services and tools for deploying and managing applications in the cloud. They provide scalability, flexibility, and cost-efficiency for modern software applications.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-with-text">
+            <img src="assets/images/JavaProgramming1.jpg" alt="Slika1">
+            <div class="image-text">
+                <p><a href="#">Top 5 Java Coding Standards and Best Practices in 2024</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="my-project" class="projects-section">
+    <h2>My Project</h2>
+    <div class="project-container">
+        <div class="project-description">
+            <p>This is my "Guess The Capital City" game. Try to guess the capital cities of different countries.</p>
+        </div>
+        <div class="game-container">
+            <div id="game">
+                <button id="resetScoreBtn">Reset Score</button>
+            </div>
+            <div id="modal">
+                <h2>Records</h2>
+                <ul id="highscoresList"></ul>
+                <label for="playerNameInput">Enter Name:</label>
+                <input type="text" id="playerNameInput">
+                <button id="saveScoreBtn">Save Score</button>
+                <button id="closeModalBtn">Close</button>
+            </div>
+            <button id="showModalBtn">Show Records</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <ul>
+        <li>You can reach me at email: aleksandargorgiev@hotmail.com</li>
+        <li>Phone number: +389 75 358 368</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Aleksandar Gjorgjiev Portfolio - Skilled Mobile Phones Software Expert and Full Stack Java Developer</p>
+    <p>&copy; 2023 Code Master. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

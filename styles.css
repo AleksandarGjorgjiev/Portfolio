@@ -1,0 +1,307 @@
+@import url('./fonts.css');
+
+body {
+    font-size: 1.3em;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Default text color set to white */
+    background-color: #708090; 
+    transition: background-color 0.5s ease; 
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.5s ease; 
+}
+
+#home, #blog, #contact {
+    font-family: 'Oswald', sans-serif; 
+    color: #fff; /* Ensures text color in these sections is white */
+}      
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    color: #fff; /* Ensures text color in sections is white */
+}
+
+footer {
+    margin-top: auto;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.blog-section {
+    display: flex;
+    align-items: center; 
+}
+
+.blog-text {
+    font-size: 1.3em;
+    flex: 1; 
+    padding: 20px; 
+    box-sizing: border-box;
+    color: #fff; /* Ensures text color in blog section is white */
+}
+
+.image-with-text {
+    flex: 1; 
+    position: relative;
+    max-width: 390px; /* 30% wider than the previous 300px */
+    height: auto;
+    margin-left: auto; /* Ensure same distance from the right side */
+}
+
+.image-with-text img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.image-with-text:hover .image-text {
+    opacity: 1; 
+}
+
+.image-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.projects-section {
+    display: flex;
+    align-items: center; 
+}
+
+.projects-section-text {
+    flex: 1; 
+    padding: 20px; 
+    box-sizing: border-box;
+    color: #fff; /* Ensures text color in projects section is white */
+}
+
+#contact h2,
+#contact ul {
+    margin-left: 20px; 
+    color: #fff; /* Ensures text color in contact section is white */
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+#home-text {
+    flex: 1; 
+    padding-left: 20px; 
+    box-sizing: border-box;
+    color: #fff; /* Ensures text color in home section is white */
+}
+
+#home img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#search-box {
+    flex: 1;
+    box-sizing: border-box;
+    margin-right: 20px; 
+}
+
+input[type="search"] {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+section h2 {
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+#projects h2 {
+    border-color: #2ecc71; 
+}
+
+#contact h2 {
+    border-color: #2ecc71; 
+}
+
+header:hover,
+footer:hover {
+    background-color: #b30753;
+}
+
+/* New Styles for Bold and Font */
+.bold-font {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Colors for section headings */
+.programming-languages {
+    color: #32cd32; /* Light Yellow */
+}
+
+.web-technologies {
+    color: #32cd32; /* SteelBlue */
+}
+
+.frameworks {
+    color: #32cd32; /* LimeGreen */
+}
+
+.other {
+    color: #32cd32; /* DeepPink */
+}
+
+/* Flexbox for skills container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skills-text {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.image-with-text {
+    flex: 1;
+    max-width: 420px; /* 30% wider than the previous 300px */
+    height: auto;
+    margin-right: 150px; /* Ensure same distance from the right side */
+}
+
+/* Ensure expanded text is white */
+.expandable-content {
+    color: white;
+}
+
+/* Styles for the game */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.game-container {
+    flex: 1;
+    max-width: 390px; /* Ensure same width as the image container */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: black; /* Ensure game text is black */
+    margin-left: auto; /* Ensure same distance from the right side */
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+#modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-show {
+    display: block; /* Class to show the modal */
+}
+
+@media (max-width: 600px) {
+    .project-container {
+        flex-direction: column;
+    }
+    #game, #modal {
+        width: 95%;
+        max-width: none;
+    }
+}
+
+/* Ensure the cursor changes to pointer when hovering over headings */
+.skills-text h2 {
+    cursor: pointer;
+}

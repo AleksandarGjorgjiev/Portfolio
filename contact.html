@@ -1,0 +1,88 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <title>Contact</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            color: #000; /* Change text color to black */
+        }
+
+        .contact-info {
+            flex: 1; 
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* Change background color to white for readability */
+            border-radius: 10px;
+            color: #000; /* Ensure text color is black */
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info p i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.5s ease;
+        }
+
+        footer:hover {
+            background-color: #b30753;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aleksandar Gjorgjiev - Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><i class="fa fa-envelope"></i>Email: aleksandargorgiev@hotmail.com</p>
+        <p><i class="fa fa-phone"></i>Tel: +38975 358 368</p>
+        <p><i class="fa fa-map-marker-alt"></i>Address: Blagoja Stefkovski Street 4/39, Skopje, Republic of Macedonia</p>
+        <p><i class="fa fa-user"></i>Name: Aleksandar Gjorgjiev</p>
+        <p><i class="fa fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/aleksandar-gjorgjiev-71b469300" target="_blank">www.linkedin.com/in/aleksandar-gjorgjiev-71b469300</a></p>
+    </div>
+	
+    <footer>
+        <p>Aleksandar Gjorgjiev Portfolio - Skilled Mobile Phones Software Expert and Full Stack Java Developer</p>
+        <p>&copy; 2023 Code Master. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
